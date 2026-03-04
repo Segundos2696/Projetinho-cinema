@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Reserva de Potrona</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 20px;
+            }
+                .poltronas {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 10px;
+}
+
+/* Cada poltrona dentro do container */
+.poltrona {
+  width: 60px;
+  height: 60px;
+  background-color: #4caf50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 6px;
+  user-select: none;
+}
+
+.poltrona.reservada {
+  background-color: #d32f2f; /* vermelho para reservada */
+}
+#mensagem {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #d32f2f; /* vermelho elegante */
+  font-weight: bold;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <h1>Reserva de Poltrona</h1>
+        <p>Clique em uma poltrona para reservar</p>
+        <div class="poltronas">
+            <div class="poltrona">1</div>
+            <div class="poltrona">2</div>
+            <div class="poltrona">3</div>
+            <div class="poltrona">4</div>
+            <div class="poltrona">5</div>
+            <div class="poltrona">6</div>
+            <div class="poltrona">7</div>
+            <div class="poltrona">8</div>
+            <div class="poltrona">9</div>
+            <div class="poltrona">10</div>
+        </div>
+        <div id="mensagem"></div>
+        <script src="script.js">defer</script>
+    </body>
+</html>
